@@ -1,39 +1,79 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Regex Tester</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <title>Regex Tester</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
   <div class="container">
-    <h2>Regex Tester</h2>
 
-    <input type="text" id="pattern" placeholder="Enter regex (e.g. \d+)" />
-    <input type="text" id="flags" placeholder="Flags (g, i, m)" />
+    <div class="top-bar">
+      <h2>Regex Tester</h2>
 
-    <p id="count"></p>
+      <button id="themeToggle">🌙</button>
+    </div>
 
-    <textarea id="text" placeholder="Enter test text..."></textarea>
+    <!-- Regex Examples -->
+    <select id="examples">
+      <option value="">Choose Example Regex</option>
+      <option value="\d+">Numbers</option>
+      <option value="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}">Email</option>
+      <option value="\d{10}">Phone Number</option>
+      <option value="\d{2}/\d{2}/\d{4}">Date</option>
+    </select>
 
-    <button type="button" onclick="testRegex()">Test</button>
+    <input
+      type="text"
+      id="pattern"
+      placeholder="Enter regex (e.g. \d+)"
+    />
+
+    <input
+      type="text"
+      id="flags"
+      placeholder="Flags (g, i, m)"
+    />
+
+    <textarea
+      id="text"
+      placeholder="Enter test text..."
+    ></textarea>
+
+    <div class="button-group">
+      <button onclick="testRegex()">Test Regex</button>
+      <button onclick="copyMatches()">Copy Matches</button>
+    </div>
+
+    <div id="stats"></div>
+
+    <div id="count"></div>
+
+    <div id="groups"></div>
 
     <div id="result"></div>
+
+    <!-- Cheat Sheet -->
+    <div class="cheatsheet">
+      <h3>Regex Cheat Sheet</h3>
+
+      <ul>
+        <li><code>\d</code> → digit</li>
+        <li><code>\w</code> → word character</li>
+        <li><code>.</code> → any character</li>
+        <li><code>+</code> → one or more</li>
+        <li><code>*</code> → zero or more</li>
+        <li><code>?</code> → optional</li>
+        <li><code>^</code> → starts with</li>
+        <li><code>$</code> → ends with</li>
+      </ul>
+    </div>
+
   </div>
 
   <script src="script.js"></script>
-
 </body>
 </html>
