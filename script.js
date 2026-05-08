@@ -6,12 +6,12 @@ function testRegex() {
   const countDisplay = document.getElementById("count");
 
   if (!pattern) {
-    result.textContent = "❌ Enter a regex pattern";
+    result.textContent = "Enter a regex pattern";
     return;
   }
 
   if (!text) {
-    result.textContent = "⚠️ Enter some text to test";
+    result.textContent = "Enter some text to test";
     countDisplay.textContent = "";
     return;
   }
