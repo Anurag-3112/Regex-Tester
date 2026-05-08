@@ -1,6 +1,6 @@
 # Regex Tester
 
-> A fast, interactive web app to test Regular Expressions in real time with instant match highlighting.
+> A modern and interactive Regular Expression testing tool built with HTML, CSS, and JavaScript that allows users to test regex patterns in real time with instant highlighting, match statistics, capture groups, and dark mode support.
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/Anurag-3112/regex-tester?style=for-the-badge)
 
@@ -16,42 +16,67 @@
 # Preview
 
 <p align="center">
-  <img src="assets/image1.png" width="700" alt="Regex Tester Screenshot 1"/>
+  <img src="assets/image1.png" width="100%" alt="Regex Tester Screenshot 1"/>
 </p>
 
 <p align="center">
-  <img src="assets/image2.png" width="700" alt="Regex Tester Screenshot 2"/>
+  <img src="assets/image2.png" width="100%" alt="Regex Tester Screenshot 2"/>
 </p>
 
 ---
 
 # Features
 
-✅ Real-time regex testing  
-✅ Instant match highlighting  
-✅ Clean and responsive UI  
-✅ Error handling for invalid patterns  
-✅ Beginner-friendly interface  
-✅ Lightweight and fast performance  
+
+## Core Features
+
+- Real-time regex testing
+- Instant text match highlighting
+- Regex flags support (`g`, `i`, `m`, `s`, `u`, `y`)
+- Match counter
+- Capture group detection
+- Invalid regex error handling
+- Fully responsive interface
+
+
+## UI Features
+
+- Modern glassmorphism-inspired UI
+- Dark / Light mode toggle
+- Animated highlighted matches
+- Clean typography using Inter font
+- Mobile-friendly responsive design
+
+---
+
+## Advanced Features
+
+- Regex cheat sheet
+- Predefined regex examples
+- Execution time measurement
+- Character & line statistics
+- Copy matched results to clipboard
+- Real-time regex evaluation while typing
 
 ---
 
 # Tech Stack
 
-| Technology | Usage |
-|------------|-------|
-| HTML5 | Structure |
-| CSS3 | Styling & Responsiveness |
-| JavaScript | Regex Logic & DOM Manipulation |
+| Technology | Purpose |
+|------------|----------|
+| HTML5 | Application Structure |
+| CSS3 | Styling & Responsive Design |
+| JavaScript (ES6) | Regex Logic & DOM Manipulation |
 
 ---
 
 # How It Works
 
-1. Enter a regular expression pattern  
-2. Add your test string  
-3. Instantly see highlighted matches  
-4. Get immediate feedback for invalid regex patterns  
+1. Enter a regex pattern
+2. Add optional regex flags
+3. Type or paste your test string
+4. Instantly view highlighted matches
+5. Analyze match count, groups, and stats
 
 ---
 
@@ -79,6 +104,17 @@ in your browser.
 
 ---
 
+# Example Regex Patterns
+
+| Purpose | Regex |
+|----------|--------|
+| Match Digits | `\d+` |
+| Match Email | `[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}` |
+| Match Phone Number | `\d{10}` |
+| Match Date | `\d{2}/\d{2}/\d{4}` |
+
+---
+
 # Project Structure
 
 ```bash
@@ -95,24 +131,26 @@ regex-tester/
 
 # Future Improvements
 
-- [ ] Support regex flags (`g`, `i`, `m`)
-- [ ] Match counter
-- [ ] Predefined regex examples
-- [ ] Dark / Light mode
-- [ ] Copy matched results
-- [ ] Mobile optimization improvements
+- [ ] Save recent regex history
+- [ ] Export results as JSON
+- [ ] Syntax-highlighted regex editor
+- [ ] Regex explanation generator
+- [ ] Keyboard shortcuts support
+- [ ] Multi-theme customization
 
 ---
 
 # What I Learned
 
-This project helped me improve my understanding of:
+This project helped me strengthen my understanding of:
 
-- JavaScript RegExp methods
-- DOM manipulation
-- Dynamic text rendering
-- Input validation
-- Responsive UI design
+- JavaScript Regular Expressions
+- Dynamic DOM Manipulation
+- Error Handling
+- Clipboard API
+- Responsive UI/UX Design
+- Real-Time Rendering Techniques
+- Performance Optimization
 
 ---
 
@@ -140,4 +178,9 @@ GitHub: [@Anurag-3112](https://github.com/Anurag-3112)
 
 # If you like this project...
 
-Give it a ⭐ on GitHub and share it with others!
+
+If you found this project useful:
+
+- Give it a ⭐ on GitHub
+- Share it with others
+- Contribute to the project
